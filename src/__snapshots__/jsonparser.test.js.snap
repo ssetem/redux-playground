@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`json parser TokensCursor peek take 1`] = `
+Array [
+  Object {
+    "cursor": 1,
+    "groups": Array [],
+    "type": "BOOLEAN",
+    "value": "false",
+  },
+  Object {
+    "cursor": 6,
+    "groups": Array [],
+    "type": "NUMBER",
+    "value": "2",
+  },
+  Object {
+    "cursor": 7,
+    "groups": Array [],
+    "type": "BOOLEAN",
+    "value": "true",
+  },
+]
+`;
+
+exports[`json parser tokenizer matches array syntax 1`] = `
+Array [
+  Object {
+    "cursor": 0,
+    "groups": Array [],
+    "type": "BRACKET_START",
+    "value": "[",
+  },
+  Object {
+    "cursor": 1,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 2,
+    "groups": Array [],
+    "type": "NUMBER",
+    "value": "1",
+  },
+  Object {
+    "cursor": 3,
+    "groups": Array [],
+    "type": "COMMA",
+    "value": ",",
+  },
+  Object {
+    "cursor": 4,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 5,
+    "groups": Array [
+      "2",
+    ],
+    "type": "STRING",
+    "value": "\\"2\\"",
+  },
+  Object {
+    "cursor": 8,
+    "groups": Array [],
+    "type": "COMMA",
+    "value": ",",
+  },
+  Object {
+    "cursor": 9,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 10,
+    "groups": Array [],
+    "type": "NUMBER",
+    "value": "3",
+  },
+  Object {
+    "cursor": 11,
+    "groups": Array [],
+    "type": "BRACKET_END",
+    "value": "]",
+  },
+]
+`;
+
+exports[`json parser tokenizer matches null false true correctly 1`] = `
+Array [
+  Object {
+    "cursor": 0,
+    "groups": Array [],
+    "type": "NULL",
+    "value": "null",
+  },
+  Object {
+    "cursor": 4,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 5,
+    "groups": Array [],
+    "type": "BOOLEAN",
+    "value": "false",
+  },
+  Object {
+    "cursor": 10,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 11,
+    "groups": Array [],
+    "type": "BOOLEAN",
+    "value": "true",
+  },
+]
+`;
+
+exports[`json parser tokenizer matches object syntax 1`] = `
+Array [
+  Object {
+    "cursor": 0,
+    "groups": Array [],
+    "type": "BRACE_START",
+    "value": "{",
+  },
+  Object {
+    "cursor": 1,
+    "groups": Array [
+      "a",
+    ],
+    "type": "STRING",
+    "value": "\\"a\\"",
+  },
+  Object {
+    "cursor": 4,
+    "groups": Array [],
+    "type": "COLON",
+    "value": ":",
+  },
+  Object {
+    "cursor": 5,
+    "groups": Array [],
+    "type": "NUMBER",
+    "value": "1",
+  },
+  Object {
+    "cursor": 6,
+    "groups": Array [],
+    "type": "COMMA",
+    "value": ",",
+  },
+  Object {
+    "cursor": 7,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 8,
+    "groups": Array [
+      "b",
+    ],
+    "type": "STRING",
+    "value": "\\"b\\"",
+  },
+  Object {
+    "cursor": 11,
+    "groups": Array [],
+    "type": "COLON",
+    "value": ":",
+  },
+  Object {
+    "cursor": 12,
+    "groups": Array [
+      "c",
+    ],
+    "type": "STRING",
+    "value": "\\"c\\"",
+  },
+  Object {
+    "cursor": 15,
+    "groups": Array [],
+    "type": "BRACE_END",
+    "value": "}",
+  },
+]
+`;
+
+exports[`json parser tokenizer tokenizes numbers correctly 1`] = `
+Array [
+  Object {
+    "cursor": 0,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 1,
+    "groups": Array [],
+    "type": "NUMBER",
+    "value": "12",
+  },
+  Object {
+    "cursor": 3,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 4,
+    "groups": Array [],
+    "type": "NUMBER",
+    "value": "-12",
+  },
+  Object {
+    "cursor": 7,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 8,
+    "groups": Array [],
+    "type": "NUMBER",
+    "value": "-12.1222E12",
+  },
+  Object {
+    "cursor": 19,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 20,
+    "groups": Array [],
+    "type": "NUMBER",
+    "value": "+12.303",
+  },
+]
+`;
+
+exports[`json parser tokenizer tokenizes strings correctly 1`] = `
+Array [
+  Object {
+    "cursor": 0,
+    "groups": Array [
+      "\\\\\\"",
+    ],
+    "type": "STRING",
+    "value": "\\"\\\\\\"\\"",
+  },
+  Object {
+    "cursor": 4,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 5,
+    "groups": Array [
+      "hello",
+    ],
+    "type": "STRING",
+    "value": "\\"hello\\"",
+  },
+  Object {
+    "cursor": 12,
+    "groups": Array [],
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  Object {
+    "cursor": 13,
+    "groups": Array [
+      "hello world",
+    ],
+    "type": "STRING",
+    "value": "\\"hello world\\"",
+  },
+]
+`;

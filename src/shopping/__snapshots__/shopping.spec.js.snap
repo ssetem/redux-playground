@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shopping testing stateful outlets 1`] = `
+Object {
+  "items": Array [],
+  "total": 0,
+}
+`;
+
+exports[`shopping testing stateful outlets 2`] = `
+Object {
+  "items": Array [
+    Object {
+      "product": Object {
+        "id": "1",
+        "name": "iPhone X",
+        "price": 1000,
+      },
+      "quantity": 1,
+      "totalPrice": 1000,
+    },
+  ],
+  "total": 1000,
+}
+`;
+
+exports[`shopping testing stateful outlets 3`] = `
+Object {
+  "items": Array [
+    Object {
+      "product": Object {
+        "id": "1",
+        "name": "iPhone X",
+        "price": 1000,
+      },
+      "quantity": 2,
+      "totalPrice": 2000,
+    },
+  ],
+  "total": 2000,
+}
+`;
+
+exports[`shopping testing stateful outlets 4`] = `
+Object {
+  "items": Array [
+    Object {
+      "product": Object {
+        "id": "1",
+        "name": "iPhone X",
+        "price": 1000,
+      },
+      "quantity": 2,
+      "totalPrice": 2000,
+    },
+    Object {
+      "product": Object {
+        "id": "2",
+        "name": "Galaxy Note 8",
+        "price": 800,
+      },
+      "quantity": 1,
+      "totalPrice": 800,
+    },
+  ],
+  "total": 2800,
+}
+`;
+
+exports[`shopping testing stateful outlets 5`] = `
+Object {
+  "items": Array [
+    Object {
+      "product": Object {
+        "id": "1",
+        "name": "iPhone X",
+        "price": 1000,
+      },
+      "quantity": 1,
+      "totalPrice": 1000,
+    },
+    Object {
+      "product": Object {
+        "id": "2",
+        "name": "Galaxy Note 8",
+        "price": 800,
+      },
+      "quantity": 1,
+      "totalPrice": 800,
+    },
+  ],
+  "total": 1800,
+}
+`;
+
+exports[`shopping testing stateful outlets 6`] = `
+Object {
+  "items": Array [
+    Object {
+      "product": Object {
+        "id": "2",
+        "name": "Galaxy Note 8",
+        "price": 800,
+      },
+      "quantity": 1,
+      "totalPrice": 800,
+    },
+  ],
+  "total": 800,
+}
+`;
